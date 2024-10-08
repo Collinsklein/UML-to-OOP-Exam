@@ -14,5 +14,16 @@ public class Main {
  double subTotal = student1.calculateSubTotal();
          subTotal = clothingItem1.price + clothingItem2.price + clothingItem3.price;
          ShoppingBag.getPrice(shoppingBag);
+
+         Student[] listOfStudents = {student1, student2};
+
+         for(Student student : listOfStudents){
+             student.printInfo();
+         }
+         Student.studentCounter();
+       // System.out.println();
+        HourlyEmployee hourlyEmployee = new HourlyEmployee("Alex","Small", shoppingBag , 40 ,20.00);
+
     }
+
 }
